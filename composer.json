@@ -1,0 +1,33 @@
+{
+  "name": "meroje/ruhoh",
+  "description": "PHP based library to process your Ruhoh static blog.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jade Dominguez",
+      "email": "plusjade@gmail.com",
+      "homepage": "http://plusjade.com/",
+      "role": "Ruby Developer"
+    },
+    {
+      "name": "Jérôme Foray",
+      "email": "foray.jerome@gmail.com",
+      "homepage": "http://inside-meroje.tk/",
+      "role": "PHP Developer"
+    }
+  ],
+  "require": {
+    "twig/twig": "1.*",
+    "illuminate/filesystem": "dev-master",
+    "mustache/mustache": "dev-master",
+    "dflydev/markdown": "dev-master",
+    "florianwolters/component-util-singleton": "dev-master",
+    "symfony/yaml": "dev-master"
+  },
+  "autoload": {
+    "psr-0": { "Ruhoh": ["lib/"] },
+    "classmap": ["lib/Filesystem.php", "lib/OptionParser.php", "lib/Ruhoh.php"]
+  },
+  "bin": ["bin/ruhoh"]
+}

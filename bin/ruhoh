@@ -1,0 +1,34 @@
+#!/usr/bin/env php
+<?php
+require dirname(__FILE__) . '/../../../autoload.php';
+
+use Ruhoh\Client\Client;
+
+$options = array();
+
+$opt_parser = new OptionParser();
+
+$opt_parser->banner = 'Use `ruhoh help` for full command list.';
+$opt_parser->on("-e:", "--ext: [EXT]",
+                "Specify filename extension. Defaults to '.md'",
+                function($ext) use(&$options) { $options['ext'] = $ext; }
+               )
+           ->on("-v", "--[no-]verbose",
+                "Run verbosely. For pages, shows extra title, url meta-data.",
+                function() use(&$options) { $options['verbose'] = true; }
+               )
+           ->on("--version",
+                "Display current gem and ruhoh specification versions.",
+                function() {
+                  echo "ruhoh " . Ruhoh::VERSION . "\nRuhohSpec " . Ruhoh::RUHOHSPEC;
+                  exit(0);
+                }
+               );
+
+$opt_parser->parse();
+
+new Client([
+  'args' => $argv,
+  'options' => $options,
+  'opt_parser' => $opt_parser
+]);

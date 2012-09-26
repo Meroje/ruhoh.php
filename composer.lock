@@ -1,0 +1,63 @@
+{
+    "hash": "8d5af7b0a292a32181fe7d23dbf1f928",
+    "packages": [
+        {
+            "package": "dflydev/markdown",
+            "version": "dev-master",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
+        },
+        {
+            "package": "dflydev/markdown",
+            "version": "dev-master",
+            "source-reference": "11f8faa2d17f717a038b4d372abd22a6ac4a15dc",
+            "commit-date": "1342369887"
+        },
+        {
+            "package": "florianwolters/component-util-singleton",
+            "version": "dev-master",
+            "source-reference": "v0.2.2",
+            "commit-date": "1346943141"
+        },
+        {
+            "package": "illuminate/filesystem",
+            "version": "dev-master",
+            "source-reference": "2e5a42d90e8418d2cb37bdf2ad7dd5712b2ca335",
+            "commit-date": "1344747246"
+        },
+        {
+            "package": "mustache/mustache",
+            "version": "dev-master",
+            "source-reference": "v2.0.2",
+            "commit-date": "1347466386"
+        },
+        {
+            "package": "symfony/yaml",
+            "version": "dev-master",
+            "alias-pretty-version": "2.2.x-dev",
+            "alias-version": "2.2.9999999.9999999-dev"
+        },
+        {
+            "package": "symfony/yaml",
+            "version": "dev-master",
+            "source-reference": "f1f0e0fea2bc568492ba1e25c2f88888d38459ca",
+            "commit-date": "1347987929"
+        },
+        {
+            "package": "twig/twig",
+            "version": "v1.9.2"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "illuminate/filesystem": 20,
+        "mustache/mustache": 20,
+        "dflydev/markdown": 20,
+        "florianwolters/component-util-singleton": 20,
+        "symfony/yaml": 20
+    }
+}
