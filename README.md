@@ -6,7 +6,7 @@
 ```JSON
 {
     "require": {
-        "monolog/monolog": "1.0.*"
+        "meroje/ruhoh": "dev-master"
     }
 }
 ```
