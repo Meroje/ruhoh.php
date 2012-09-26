@@ -11,5 +11,5 @@
 }
 ```
 
-$ composer install
+$ composer install  
 $ vendor/bin/ruhoh help
